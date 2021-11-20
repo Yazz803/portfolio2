@@ -1,0 +1,202 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/* my style */
+.container {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px 5px gray;
+}
+.top img {
+    width: 120px;
+    height: 120px;
+    float: right;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0  0 2px rgb(60, 60, 83), 0 0 0 7px white;
+}
+.top {
+    width: 100%;
+    background-color: rgb(45, 45, 68);
+    color: white;
+    padding-left: 30px;
+}
+.top h1 {
+    letter-spacing: 5px;
+}
+.top h3 {
+    margin-top: -20px;
+    color: rgb(247, 37, 37);
+}
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.left {
+    background-color: rgb(46, 46, 46);
+    height: 900px;
+}
+.left img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.middle, .right {
+    background-color: white;
+}
+.hp h3 {
+    padding-left: 10px;
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.hp a {
+    color: white;
+    text-decoration: none;
+}
+.hp table {
+    padding-top: 0;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: -10px;
+}
+.hp svg {
+    width: 30px;
+    height: 30px;
+    transition: .10s;
+}
+.hp tr:hover, svg:hover {
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .10s;
+}
+
+.middle {
+    padding-left: 20px;
+    text-align: justify;
+}
+.middle h2 {
+    color: rgb(36, 120, 153);
+    margin-bottom: 5px;
+}
+.middle hr {
+    margin: 0;
+    padding: 0;
+    height: 5px;
+    background-color: rgb(36, 120, 153);
+}
+.right {
+    padding-left: 20px;
+    padding-right: 10px;
+    text-align: justify;
+}
+.right h2 {
+    color: rgb(98, 192, 230);
+    margin-bottom: 5px;
+}
+.terakhir {
+    font-size: 20px;
+}
+.right hr {
+    margin: 0;
+    padding: 0;
+    height: 5px;
+    background-color: skyblue;
+}
+.right ul li {
+    margin-left: -20px;
+}
+
+@media (max-width:1000px) {
+    body {
+        margin: 0;
+    }
+    .top img {
+        width: 90px;
+        height: 90px;
+    }
+    .container {
+        margin: 0;
+    }
+    .top h1 {
+        font-size: 20px;
+        letter-spacing: 0;
+        margin-top: 20px;
+    }
+    .top h3 {
+        margin: 0;
+        font-size: 15px;
+    }
+    .left h3 {
+        font-size: 15px;
+    }
+    .hp svg {
+        width: 20px;
+        height: 20px;
+    }
+    .hp td {
+        font-size: 10px;
+    }
+    .hp table {
+        padding-left: 0;
+    }
+    .hp svg {
+        transition: 0;
+    }
+    .hp tr:hover, svg:hover {
+        width: 20px;
+        height: 20px;
+        font-weight: bold;
+        font-size: 11px;
+    }
+    .middle {
+        padding-left: 10px;
+    }
+    .middle h2 {
+        font-size: 18px;
+    }
+    .middle p {
+        font-size: 11px;
+    }
+    .right {
+        padding-left: 10px;
+    }
+    .right h2 {
+        font-size: 18px;
+    }
+    .right p, ul li {
+        font-size: 11px;
+    }
+    .left {
+        height: 850px;
+    }
+    h2.terakhir {
+        font-size: 15px;
+    }
+}
