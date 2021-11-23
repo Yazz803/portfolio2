@@ -1,3 +1,6 @@
+body {
+    background-color: rgba(0, 0, 0, 0.397);
+}
 
 * {
     box-sizing: border-box;
@@ -52,12 +55,12 @@
 }
 .column {
     float: left;
-    width: 33.33%;
 }
 
 .left {
     background-color: rgb(46, 46, 46);
     height: 900px;
+    width: 40%;
 }
 .left img {
     width: 100%;
@@ -66,18 +69,15 @@
     background-repeat: no-repeat;
     padding: 2px;
     position: relative;
-    transition: 1s;
+    transition: .3s;
 }
 .left img:hover {
     width: 150%;
     margin-left: -90px;
     position: relative;
-    transition: 1s;
+    transition: .5s;
     box-shadow: 0 0 30px 10px black;
     padding: 0;
-}
-.middle, .right {
-    background-color: white;
 }
 .hp h3 {
     padding-left: 10px;
@@ -115,7 +115,17 @@
 
 .middle {
     padding-left: 20px;
-    text-align: justify;
+    text-align: left;
+    width: 60%;
+    background-color: white;
+    height: 895px;
+}
+.middle ul li {
+    margin-left: -20px;
+    padding-bottom: 10px;
+}
+.middle ul span {
+    font-weight: bold;
 }
 .middle h2 {
     color: rgb(36, 120, 153);
@@ -125,12 +135,23 @@
     margin: 0;
     padding: 0;
     height: 5px;
+    margin-right: 17px;
     background-color: rgb(36, 120, 153);
+}
+.middle a img {
+    width: 100px;
+    height: 150px;
+    box-shadow: 5px 5px 10px -1px black, -5px -5px 10px -1px black;
+    margin-right: 20px;
+}
+.middle a {
+    text-decoration: none;
 }
 .right {
     padding-left: 20px;
     padding-right: 10px;
     text-align: justify;
+    background-color: white;
 }
 .right h2 {
     color: rgb(98, 192, 230);
@@ -147,6 +168,18 @@
 }
 .right ul li {
     margin-left: -20px;
+}
+.right a {
+    text-decoration: none;
+}
+.right img {
+    width: 380px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px -1px black;
+}
+.column2 {
+    border-bottom: 5px solid rgb(46, 46, 46);
+    height: 900px;
 }
 
 @media (max-width:1000px) {
@@ -167,7 +200,7 @@
     }
     .column2 {
         border-bottom: 5px solid rgb(46, 46, 46);
-        height: 500px;
+        height: 700px;
     }
     .top h3 {
         margin: 0;
@@ -203,12 +236,17 @@
         width: 60%;
         padding-left: 10px;
         padding-right: 10px;
+        height: 695px;
     }
     .middle h2 {
         font-size: 18px;
     }
     .middle p {
         font-size: 11px;
+    }
+    .middle a img {
+        width: 50px;
+        height: 100px;
     }
     .right {
         width: 100%;
@@ -219,6 +257,10 @@
     }
     .right p, ul li {
         font-size: 11px;
+    }
+    .right img {
+        width: 200px;
+        margin-top: 10px;
     }
     .left {
         height: inherit;
