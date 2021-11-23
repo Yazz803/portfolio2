@@ -244,6 +244,9 @@ body {
     .middle p {
         font-size: 11px;
     }
+    .middle hr {
+        margin-right: 0;
+    }
     .middle a img {
         width: 40px;
         height: 80px;
