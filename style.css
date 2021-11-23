@@ -185,6 +185,7 @@ body {
 @media (max-width:1000px) {
     body {
         margin: 0;
+        background-color: white;
     }
     .top img {
         width: 90px;
