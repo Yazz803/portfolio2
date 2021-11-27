@@ -1,5 +1,19 @@
 body {
-    background-color: rgba(0, 0, 0, 0.397);
+    background-color: rgb(231, 231, 231);
+}
+body::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(img/5585664.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: '';
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    animation: fadeinbody 1s 2s ease-in forwards;
 }
 
 * {
@@ -30,6 +44,7 @@ body {
     margin-right: 20%;
     margin-top: 20px;
     box-shadow: 5px 5px 10px 5px gray;
+    animation: fadein 1.5s ease-in ;
 }
 .top img {
     width: 120px;
@@ -189,6 +204,13 @@ body {
 .right a {
     text-decoration: none;
 }
+.right table {
+    width: 100%;
+    text-align: center;
+}
+.right .certificate {
+    width: 300px;
+}
 .right img {
     width: 380px;
     margin-top: 20px;
@@ -203,9 +225,35 @@ body {
     height: 900px;
 }
 
+/* animation */
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        filter: grayscale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes fadeinbody {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.4);
+    }
+}
+
 @media (max-width:1000px) {
     body {
         margin: 0;
+    }
+    body::before {
+        animation: none;
+        opacity: 0;
     }
     .top img {
         width: 90px;
@@ -293,6 +341,9 @@ body {
     }
     .right p, ul li {
         font-size: 11px;
+    }
+    .right .certificate {
+        width: 200px;
     }
     .right img {
         width: 200px;
