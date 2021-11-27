@@ -330,8 +330,10 @@ body::before {
         font-size: 11px;
     }
     .middle a img {
-        width: 15%;
-        height: 15%;
+        width: 30%;
+        height: auto;
+        margin: 0;
+        box-shadow: 0 0 0 white;
     }
     .right {
         width: 100%;
