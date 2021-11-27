@@ -129,10 +129,10 @@ body::before {
 .hp tr:hover, svg:hover {
     font-weight: bold;
     font-size: 18px;
-    transition: 1s;
+    transition: .3s;
 }
 .hp svg:hover {
-    transform: scale(1.5) rotate(360deg);
+    transform: scale(1.5);
 }
 
 .middle {
