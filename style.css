@@ -126,13 +126,13 @@ body::before {
 .hp th {
     transition: 1s;
 }
-.hp tr:hover, svg:hover {
+.hp:hover svg {
+    transform: scale(1.5);
+}
+.hp:hover tr {
     font-weight: bold;
     font-size: 18px;
     transition: .3s;
-}
-.hp svg:hover {
-    transform: scale(1.5);
 }
 
 .middle {
