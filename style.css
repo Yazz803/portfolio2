@@ -124,7 +124,7 @@ body::before {
     transition: 1s;
 }
 .hp th {
-    transition: 1s;
+    transition: .3s;
 }
 .hp:hover svg {
     transform: scale(1.5);
